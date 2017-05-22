@@ -24,8 +24,8 @@ This project requires **Python 3** and the following Python libraries installed:
 - [jupyter](http://ipython.org/notebook.html)
 - [hmmlearn](http://hmmlearn.readthedocs.io/en/latest/)
 
-Notes: 
-1. It is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python and load the environment included in the "Your conda env for AI ND" lesson.
+##### Notes: 
+1. It is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python and load the environment included below.
 2. The most recent development version of hmmlearn, 0.2.1, contains a bugfix related to the log function, which is used in this project.  In order to install this version of hmmearn, install it directly from its repo with the following command from within your activated Anaconda environment:
 ```sh
 pip install git+https://github.com/hmmlearn/hmmlearn.git
@@ -67,7 +67,7 @@ Windows and Linux
     2. Install with `pip install pygame-1.9.3-yourpythonwindows.whl`.
 
 
-Download the one of the following yml files.
+Download the one of the following yml files:
 [aind-environment-osx.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7e68_aind-environment-macos/aind-environment-macos.yml)
 [aind-environment-unix.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7eff_aind-environment-unix/aind-environment-unix.yml)
 [aind-environment-windows.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7f6c_aind-environment-windows/aind-environment-windows.yml)
