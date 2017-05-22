@@ -1,8 +1,18 @@
 # Artificial Intelligence Engineer Nanodegree
 ## Probabilistic Models
-## Project: Sign Language Recognition System
+### Project: Sign Language Recognition System
+In this project, I built a system that can recognize words communicated using the American Sign Language (ASL). I was provided with a preprocessed dataset of tracked hand and nose positions extracted from video. My goal was to train a set of Hidden Markov Models (HMMs) using part of this dataset to try and identify individual words from test sequences.
 
-### Install
+As an optional challenge, I incorporated Statistical Language Models (SLMs) that capture the conditional probability of particular sequences of words occurring. This helps improve the recognition accuracy of the system.
+
+## Getting Started
+
+To get this code on your machine you can fork the repo or open a terminal and run this command.
+```sh
+git clone https://github.com/JonathanKSullivan/Sign-Language-Recognizer.git
+```
+
+### Prerequisites
 
 This project requires **Python 3** and the following Python libraries installed:
 
@@ -20,20 +30,75 @@ Notes:
 ```sh
 pip install git+https://github.com/hmmlearn/hmmlearn.git
 ```
+I used pygame to help me visualize mu programs so that I have beautiful visualizations of AI I can share with others in your portfolio. However, pygame is optional as it can be tricky to install. 
 
-### Code
+### Installing
+#### Mac OS X and Linux
+1. Download the `aind-environment-unix.yml/aind-environment-unix.yml`/`aind-environment-osx.yml` file at the bottom of this section.
+2. Run `conda env create -f aind-environment-unix.yml`(or `aind-environment-osx.yml`) to create the environment.
+then source activate aind to enter the environment.
+3. Install the development version of hmmlearn 0.2.1 with a source build: `pip install git+https://github.com/hmmlearn/hmmlearn.git`. 
 
-A template notebook is provided as `asl_recognizer.ipynb`. The notebook is a combination tutorial and submission document.  Some of the codebase and some of your implementation will be external to the notebook. For submission, complete the **Submission** sections of each part.  This will include running your implementations in code notebook cells, answering analysis questions, and passing provided unit tests provided in the codebase and called out in the notebook. 
+#### Windows
+1. Download the `aind-environment-windows.yml` file at the bottom of this section.
+2. `conda env create -f aind-environment-windows.yml` to create the environment.
+then activate aind to enter the environment.
+3. Install the development version of hmmlearn 0.2.1 in one of the following ways. 
+    ##### Source build
+    1. Download the Visual C++ Build Tools [here](http://landinghub.visualstudio.com/visual-cpp-build-tools).
+    `pip install git+https://github.com/hmmlearn/hmmlearn.git`
+    ##### Precompiled binary wheel
+    1. Download the appropriate `hmmlearn-0.2.1-yourpythonwindows.whl` file from here
+    2. Install with `pip install hmmlearn-0.2.1-yourpythonwindows.whl`.
 
-### Run
+#### Optional: Install Pygame
+I used pygame to help you visualize my programs so that I have beautiful visualizations of AI I can share with others in my portfolio. 
+##### Mac OS X
+1. Install [homebrew](http://brew.sh/)
+2. `brew install sdl sdl_image sdl_mixer sdl_ttf portmidi mercurial`
+3. `source activate aind`
+4. `pip install pygame`
+Some users have reported that pygame is not properly initialized on OSX until you also run `python -m pygame.tests`.
 
-In a terminal or command window, navigate to the top-level project directory `AIND_recognizer/` (that contains this README) and run one of the following command:
+Windows and Linux
+1. `pip install pygame`
+2. In Windows, an alternate method is to install a precompiled binary wheel:
+    1. Download the appropriate `pygame-1.9.3-yourpythonwindows.whl` file from here
+    2. Install with `pip install pygame-1.9.3-yourpythonwindows.whl`.
 
-`jupyter notebook asl_recognizer.ipynb`
 
-This will open the Jupyter Notebook software and notebook in your browser. Follow the instructions in the notebook for completing the project.
+Download the one of the following yml files.
+[aind-environment-osx.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7e68_aind-environment-macos/aind-environment-macos.yml)
+[aind-environment-unix.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7eff_aind-environment-unix/aind-environment-unix.yml)
+[aind-environment-windows.yml](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ee7f6c_aind-environment-windows/aind-environment-windows.yml)
 
+## Running the tests
 
+Test are included in notebook. To run test from terminal, navigate to project directory and run 
+```sh
+    asl_test.py
+```
+
+## Deployment
+To run simply navigate to project directory and run 
+```sh
+    jupyter notebook asl_recognizer.ipynb
+```
+
+## Built With
+
+* [Jupyter](http://www.http://jupyter.org/) - The Document Editor used
+* [Anaconda](https://www.continuum.io/downloads) - The data science platform used
+* [hmmlearn](https://github.com/hmmlearn/hmmlearn) - Python Hidden Markov Models API used 
+
+## Authors
+* **Udacity** - *Initial work* - [AIND-Recognizer](https://github.com/udacity/AIND-Recognizer)
+* **Jonathan Sulivan** - *Build Model* -
+
+## Acknowledgments
+* Hackbright Academy
+* Udacity
+ 
 ### Additional Information
 ##### Provided Raw Data
 
