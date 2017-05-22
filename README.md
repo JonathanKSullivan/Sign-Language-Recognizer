@@ -93,7 +93,7 @@ To run simply navigate to project directory and run
 
 ## Authors
 * **Udacity** - *Initial work* - [AIND-Recognizer](https://github.com/udacity/AIND-Recognizer)
-* **Jonathan Sulivan** - *Build Model* -
+* **Jonathan Sulivan**
 
 ## Acknowledgments
 * Hackbright Academy
